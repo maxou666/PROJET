@@ -1,0 +1,103 @@
+body{
+    background: #00b4d5 ;
+}
+#container{
+    width:711PX;
+    margin:0 auto;
+    margin-top:10%;
+}
+/* Bordered form */
+#container form {
+    height:20% ;
+    width:100%;
+    padding: 10px;
+    border: 1px solid #00b4d5;
+    background: #00b4d5;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container1{
+    width:711PX;
+    margin:0 auto;
+    margin-top:10%;
+}
+#container1 form {
+    height:35% ;
+    width:100%;
+    padding: 10px;
+    border: 1px solid #00b4d5;
+    background: #00b4d5;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+#container input[type=email],#container input[type=password],#container input[type=text] {
+    width: 100%;    height:15% ;
+
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#container1 input[type=email],#container1 input[type=password],#container1 input[type=text] {
+    width: 100%;    height:9% ;
+
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#container1 button {
+    background-color: #FFFFFF;
+    color: #00b4d5;
+    padding: 14px 20px;
+    margin: 17px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height:19% ;
+
+}
+#container button {
+    background-color: #FFFFFF;
+    color: #00b4d5;
+    padding: 14px 20px;
+    margin: 17px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height:31% ;
+
+}
+input[type=submit]:hover {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+select {
+    background-color: #fab600;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+option{
+    background-color: #fab600;
+    color: #ffffff;
+    
+}
