@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name= "viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="style/style.css" media="screen" type="text/css" />
         <script src="jquery-666.js" ></script>
-        <title>Projet Meuble</title>
+        <title>Co-MEUD</title>
     </head>
 
     <body id ="froom" >
@@ -42,8 +42,7 @@
             }
         ?>
         
-        <title>Projet Meuble</title>
-        <p style="text-align:center" id ="email" title="<?php echo($_SESSION['email'])?>"> Bienvenue sur le choix objet 1  <?php echo($_SESSION['prenom'])?>  </p>
+        <h1 style="text-align:center" id ="email" title="<?php echo($_SESSION['email'])?>">Vous avez choisi les pinces !</h1>
 
         <p id ="anchor" title="<?php echo($anchor)?>"> </p>
         <p id ="heur" title="<?php echo($heur)?>">  </p>
@@ -53,13 +52,13 @@
 
         
         
-        <button id ="afficher" class ="afficher" type="submit">Afficher QRCODE</button>
-        <button id ="choisir" class ="choisir" type="submit">Choisir Creaneau</button>
-        <button id ="changer" class ="changer" title = "cgt"  type="submit">Changer de creaneau</button>
+        <button id ="afficher" class ="afficher" type="submit">Afficher le QRCODE</button>
+        <button id ="choisir" class ="choisir" type="submit">Choisir un créneau</button>
+        <button id ="changer" class ="changer" title = "cgt"  type="submit">Changer de créneau</button>
         
         <button id ="reset" class ="reset" type="submit">Reset</button>
 
-        <label for="choix_heure">Veuillez choisr un creneau    : </label>
+        <label for="choix_heure">Veuillez choisr un créneau : </label>
         <div class="custom-select" style="width:200px;">
         <select style="width:335px" disabled id="choix_heure">
              <option style="text-align:center"  class = "heure" id ="nul"  value="nul"  value="">--:--</option>

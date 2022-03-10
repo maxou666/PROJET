@@ -62,7 +62,7 @@ function choisirCreneau() {
     choix.disabled=true;
 
     if (lanchor.title!== '') { 
-        tri.textContent = "Vous avez deja selcetionne un creaneau";  
+        tri.textContent = "Vous avez déjà séletionné un créneau";  
         select.disabled = true;
         valide.disabled= true;
         choix.disabled=true; 
@@ -80,7 +80,7 @@ if (lanchor.title!== '') {
         fini()    
 }
 else {
-    tri.textContent = "Vous n avez pas encore reserve"
+    tri.textContent = "Vous n'avez pas encore réservé"
 }
 }
  function changerCreaneau (){
@@ -124,7 +124,7 @@ function setBdd() {
      if (choice === heure[i].value) {
     heure[i].disabled = true;
     let $a = i-1; 
-    tri.textContent = 'Vous avez selectionne le creneau suivant : '+$a+':00';
+    tri.textContent = 'Vous avez sélectionné le créneau suivant : '+$a+':00';
     tri.textContent = lemail.title;
     remplissage($a,'0','0','objet' );
     remplissage (lemail.title,heure[i].id,Random(),'reservation');

@@ -2,7 +2,7 @@
     <head>
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
-        <link rel="stylesheet" href="login.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="style/login.css" media="screen" type="text/css" />
     </head>
     <body>
         <div id="container">
@@ -14,10 +14,10 @@
                 
 
                 <label><b>Email</b></label>
-                <input type="email" placeholder="Entrer votre email" name="email" required>
+                <input type="email" placeholder="Entrez votre email" name="email" required>
 
                 <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                <input type="password" placeholder="Entrez votre mot de passe" name="password" required>
 
                 <button type="submit" id='submit' value='LOGIN' >Se connecter</button>
                 <?php
@@ -29,7 +29,7 @@
                 if(isset($_GET['inscri'])){
                     $ins = $_GET['inscri'];
                     if($ins==1 )
-                       echo "<script> alert(\"Vous etes bien inscrit, vous pouvez desormais vous connecter\")</script>";
+                       echo "<script> alert(\"Vous etes bien inscrit, vous pouvez désormais vous connecter\")</script>";
                 }
                 ?>
             </form>
@@ -41,18 +41,18 @@
                 <h1>Inscription</h1>
 
                 <label><b>Nom</b></label>
-                <input type="text" placeholder="Entrer votre nom" name="nom" required>
+                <input type="text" placeholder="Entrez votre nom" name="nom" required>
 
-                <label><b>Prenom</b></label>
-                <input type="text" placeholder="Entrer votre prenom" name="prenom" required>
+                <label><b>Prénom</b></label>
+                <input type="text" placeholder="Entrez votre prenom" name="prenom" required>
 
-                <label><b>Nom d'utilisateur</b></label>
-                <input type="email" placeholder="Entrer le nom d'utilisateur" name="emaili" required>
+                <label><b>Email</b></label>
+                <input type="email" placeholder="Entreé votre email" name="emaili" required>
 
                 <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" name="passwordi" required>
+                <input type="password" placeholder="Entrez votre mot de passe" name="passwordi" required>
 
-                 <button type="submit" id='submit' value='LOGIN' >S inscrire</button>
+                 <button type="submit" id='submit' value='LOGIN' >S'inscrire</button>
                 <?php
                 if(isset($_GET['erreur'])){
                     $err = $_GET['erreur'];
