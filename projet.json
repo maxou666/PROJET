@@ -1,0 +1,44 @@
+[
+{"type":"header","version":"5.1.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"projet"},
+{"type":"table","name":"objet1","database":"projet","data":
+[
+["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","0","1","1","1","0","0","0","1"]
+]
+}
+,{"type":"table","name":"objet2","database":"projet","data":
+[
+["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"]
+]
+}
+,{"type":"table","name":"objet3","database":"projet","data":
+[
+["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","0","1","1","1","1","0","1","1"]
+]
+}
+,{"type":"table","name":"objet4","database":"projet","data":
+[
+["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","0","1","1","1","1","1","1","1"]
+]
+}
+,{"type":"table","name":"reservation","database":"projet","data":
+[
+{"Objet":"Objet1","0":"","1":"","2":"","3":"","4":"","5":"","6":"","7":"","8":"","9":"","10":"","11":"","12":"","13":"","14":"","15":"","16":" TTUvv","17":" 3u42Z","18":"","19":"","20":"","21":" nOkpN","22":"","23":" 9kSlH","24":""},
+{"Objet":"Objet2","0":"","1":"","2":"","3":"","4":"","5":"","6":"","7":"","8":"","9":"","10":"","11":"","12":"","13":"","14":"","15":"","16":" ZSGIw","17":"","18":"","19":"","20":"","21":"","22":"","23":" raIy9","24":""},
+{"Objet":"Objet3","0":"","1":"","2":"","3":"","4":"","5":"","6":"","7":"","8":"","9":"","10":"","11":"","12":"","13":"","14":"","15":"","16":" JzvZp","17":"","18":"","19":"","20":"","21":"","22":"","23":" P3V7T","24":"cft"},
+{"Objet":"Objet4","0":"","1":"","2":"","3":"","4":"","5":"","6":"","7":"","8":"","9":"","10":"","11":"","12":"","13":"","14":"","15":"","16":" AndwJ","17":"","18":"","19":"","20":"","21":"","22":"","23":"","24":""}
+]
+}
+,{"type":"table","name":"users","database":"projet","data":
+[
+{"Nom":"Ro","Prenom":"Ve","Email":"vero","Password":"rove","RESERV":"0","QRCODE1":"","HEURE1":null,"QRCODE2":"","HEURE2":null,"QRCODE3":"","HEURE3":null,"QRCODE4":"","HEURE4":null},
+{"Nom":"Bretzel","Prenom":"Max","Email":"mbella","Password":"mb","RESERV":"0","QRCODE1":"","HEURE1":null,"QRCODE2":"","HEURE2":null,"QRCODE3":"","HEURE3":null,"QRCODE4":"","HEURE4":null},
+{"Nom":"gp","Prenom":"gp","Email":"gp","Password":"gp","RESERV":"0","QRCODE1":"","HEURE1":null,"QRCODE2":"","HEURE2":null,"QRCODE3":"","HEURE3":null,"QRCODE4":"","HEURE4":null},
+{"Nom":"test","Prenom":"test","Email":"test","Password":"test","RESERV":"0","QRCODE1":"","HEURE1":null,"QRCODE2":"","HEURE2":null,"QRCODE3":"","HEURE3":null,"QRCODE4":"","HEURE4":null},
+{"Nom":"testi","Prenom":"testi","Email":"testi","Password":"testi","RESERV":"0","QRCODE1":"","HEURE1":null,"QRCODE2":"","HEURE2":null,"QRCODE3":"","HEURE3":null,"QRCODE4":"","HEURE4":null},
+{"Nom":"mar","Prenom":"ti","Email":"mart@dde","Password":"abc","RESERV":"1","QRCODE1":"","HEURE1":"19","QRCODE2":"","HEURE2":"16","QRCODE3":"","HEURE3":"17","QRCODE4":"","HEURE4":null},
+{"Nom":"Root","Prenom":"Root","Email":"root@root.com","Password":"$2y$12$Sdq2argqZB9FATKLBHRG.e2XWGKU3LIGDEGKttKttA1UrHcrt.vf2","RESERV":"1","QRCODE1":" ","HEURE1":"22","QRCODE2":"","HEURE2":null,"QRCODE3":"","HEURE3":null,"QRCODE4":"","HEURE4":null},
+{"Nom":"Carton","Prenom":"Antoine","Email":"ac@ac.com","Password":"$2y$12$43wosH46R.22Y70UdxntuertCfiyZVBFP847tcrJ32Ep9KnLrNmIy","RESERV":"1","QRCODE1":" 3u42Z","HEURE1":"17","QRCODE2":" ZSGIw","HEURE2":"16","QRCODE3":" JzvZp","HEURE3":"16","QRCODE4":" AndwJ","HEURE4":"16"}
+]
+}
+]
