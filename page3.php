@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta name= "viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="style/style.css" media="screen" type="text/css" />
+        <link rel="icon" href="img/favicon.ico" />
         <script src="jquery-666.js" ></script>
         <title>Co-MEUD</title>
     </head>
