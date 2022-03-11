@@ -30,7 +30,7 @@
                 if(isset($_GET['inscri'])){
                     $ins = $_GET['inscri'];
                     if($ins==1 )
-                       echo "<script> alert(\"Vous etes bien inscrit, vous pouvez désormais vous connecter\")</script>";
+                       echo "<script> alert(\"Vous êtes bien inscrit, vous pouvez désormais vous connecter\")</script>";
                 }
                 ?>
             </form>
