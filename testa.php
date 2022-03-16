@@ -9,7 +9,7 @@ if(!isset($_SESSION['email'])){
     $today = date("H");
     
     $realtoday = $today+1;
-    echo($realtoday);
+    //echo($realtoday);
     if ($realtoday!=24){
       
       	
