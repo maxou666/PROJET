@@ -11,10 +11,9 @@
         <title>Co-MEUD</title>
     </head>
 
-    <body id = "bobo">
-        <?php 
-          include("testa.php")  ;    
-        ?>
+    <body>
+        <?php include("header.php"); ?>
+        <?php include("testa.php"); ?>
         
     	<h1 id = "heure" style = "text-align:center"> Bonjour <?php echo($_SESSION['prenom']) ?>, bienvenue sur la sélection d'objets !</h1>
         <h2 id = "email" style = "text-align:center"> Pour choisir un objet à emprunter, veuillez cliquer sur celui-ci</h2>
