@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("fonts/Poppins-Regular.ttf");
+}
+
+.header{
+    font-family: "Poppins-Bold";
+    font-size: xx-large;
+}
+
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}

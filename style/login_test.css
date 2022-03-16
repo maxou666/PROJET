@@ -1,13 +1,13 @@
 body{
     background: #1a8da3 ;
 }
-#container{
+#container-connection{
     width:720PX;
     margin: auto;
     margin-top:10%;
 }
 /* Bordered form */
-#container form {
+#container-connection form {
     height:29% ;
     width:90%;
     padding: 10px;
@@ -15,12 +15,12 @@ body{
     background: #00b4d5;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-#container1{
+#container-inscription{
     width:720PX;
     margin:0 auto;
     margin-top:25%;
 }
-#container1 form {
+#container-inscription form {
     height: 42%;
     width:90%;
     padding: 10px;
@@ -28,14 +28,14 @@ body{
     background: #00b4d5;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-#container h1{
+#container-connection h1{
     width: 22%;
     margin: auto;
     padding-bottom: 19px;
 }
 
 /* Full-width inputs */
-#container input[type=email],#container input[type=password],#container input[type=text] {
+#container-connection input[type=email],#container-connection input[type=password],#container-connection input[type=text] {
     width: 100%;    height:14% ;
 
     padding: 12px 20px;
@@ -44,7 +44,7 @@ body{
     border: 1px solid #fff;
     box-sizing: border-box;
 }
-#container1 input[type=email],#container1 input[type=password],#container1 input[type=text] {
+#container-inscription input[type=email],#container-inscription input[type=password],#container-inscription input[type=text] {
     width: 100%;    height:9% ;
 
     padding: 12px 20px;
@@ -55,7 +55,7 @@ body{
 }
 
 /* Set a style for all buttons */
-#container1 button {
+#container-inscription button {
     background-color: #FFFFFF;
     color: #00b4d5;
     padding: 14px 20px;
@@ -66,7 +66,7 @@ body{
     height:12% ;
 
 }
-#container button {
+#container-connection button {
     background-color: #FFFFFF;
     color: #00bcdf;
     padding: 14px 20px;

@@ -5,9 +5,9 @@
         <link rel="stylesheet" href="style/login_test.css" media="screen" type="text/css" />
         <link rel="icon" href="img/favicon.ico" />
     </head>
+
     <body>
-        <?php include("header.php") ?>
-        <div id="container">
+        <div id="container-connection">
             <!-- zone de connexion -->
             
             <form action="verification.php" method="POST">
@@ -15,7 +15,7 @@
 
                 
 
-                <label><b>Email</b></label>
+                <label><b>Email</label>
                 <input type="email" placeholder="Entrez votre email" name="email" required>
 
                 <label><b>Mot de passe</b></label>
@@ -36,8 +36,9 @@
                 ?>
             </form>
         </div>
-        <div id="container1">
-            <!-- zone de connexion -->
+
+        <div id="container-inscription">
+            <!-- zone d'inscription -->
             
             <form action="inscription.php" method="GET">
                 <h1>Inscription</h1>
@@ -49,12 +50,12 @@
                 <input type="text" placeholder="Entrez votre prenom" name="prenom" required>
 
                 <label><b>Email</b></label>
-                <input type="email" placeholder="Entreé votre email" name="emaili" required>
+                <input type="email" placeholder="Entrez votre email" name="emaili" required>
 
                 <label><b>Mot de passe</b></label>
                 <input type="password" placeholder="Entrez votre mot de passe" name="passwordi" required>
 
-                 <button type="submit" id='submit' value='LOGIN' >S'inscrire</button>
+                <button type="submit" id='submit' value='LOGIN' >S'inscrire</button>
                 <?php
                 if(isset($_GET['erreur'])){
                     $err = $_GET['erreur'];
