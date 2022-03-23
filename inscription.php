@@ -14,7 +14,7 @@ if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['emaili']) &&
 {
 
     $options = [
-    'cost' => 12,
+    'cost' => 12, 
     ];
      $hash = password_hash($a, PASSWORD_BCRYPT, $options);
      $e = "'".$hash."'" ;
