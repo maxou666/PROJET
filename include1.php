@@ -52,7 +52,7 @@ if(isset($_GET['bad'])){
    $m = $_GET['rst'] ;
    $a = "`".$n."`" ;
    $b = "'".$m."'" ;
-   echo($b);
+   // echo($b);
    $upd = "UPDATE `objet1` SET $a=$b;";
 
       $bdd->exec($upd);
@@ -66,7 +66,7 @@ else if ($_GET['bad']==='reservation') {
    $l = "`".$k."`" ;
    $b = "'".$m."'" ;
    $f = "'".$q."'" ;
-      echo($l.$b);
+      // echo($l.$b);
 
    $upt = "UPDATE `reservation` SET $l=$b WHERE `Objet`='Objet1';";
       $bdd->exec($upt);   

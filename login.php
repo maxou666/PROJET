@@ -1,9 +1,5 @@
 <?php include("includes/head.html") ?>
 
-<head>
-    <link rel="stylesheet" href="style/login.css">
-</head>
-
 <body class="text-center">
     <div class="container">
         <h2 class="mb-3 fw-normal">Connexion</h2>

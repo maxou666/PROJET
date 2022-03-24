@@ -12,15 +12,15 @@ var heu = document.getElementById("heur");
 
 
 
-affiche.addEventListener("click",afficherQR);
-choix.addEventListener("click",choisirCreneau);
-change.addEventListener("click",changerCreaneau);
+affiche.addEventListener("click", afficherQR);
+choix.addEventListener("click", choisirCreneau);
+change.addEventListener("click", changerCreaneau);
 
 
-valide.addEventListener("click",setBdd);
-reset.addEventListener("click",setReset);
+valide.addEventListener("click", setBdd);
+reset.addEventListener("click", setReset);
 //tij.addEventListener("click",trui);
-var heure = document.querySelectorAll(".heure") ;
+var heure = document.querySelectorAll(".heure");
 const res = document.getElementById("res");
 const tri = document.getElementById("try");
 const lemail = document.getElementById("email");
@@ -37,73 +37,72 @@ let minuit = today.getHours()
 }
 */
 //dispo creaneaux selon bdd
-if ( minuit!=0 ){ 
+if (minuit != 0) {
 
-for (var i =0 ; i <heure.length  ; i++) {
-  
+    for (var i = 0; i < heure.length; i++) {
 
 
- if (heure[i].title === 'false') {
-    heure[i].disabled = false;
-  }
-     else {
-    heure[i].disabled = true;
-  } 
+
+        if (heure[i].title === 'false') {
+            heure[i].disabled = false;
+        } else {
+            heure[i].disabled = true;
+        }
+    }
+    for (var i = 0; i < heure.length; i++) {
+        if (minuit >= i) {
+            heure[i + 1].disabled = true;
+        }
+    }
 }
-for (var i =0 ; i <heure.length  ; i++) {  
-  if (minuit>= i) {
-    heure[i+1].disabled = true;
-  }
-}
-}
+
 function choisirCreneau() {
     select.disabled = false;
-    valide.disabled= false;
-    choix.disabled=true;
+    valide.disabled = false;
+    choix.disabled = true;
 
-    if (lanchor.title!== '') { 
-        tri.textContent = "Vous avez déjà séletionné un créneau";  
+    if (lanchor.title !== '') {
+        tri.textContent = "Vous avez déjà séletionné un créneau";
         select.disabled = true;
-        valide.disabled= true;
-        choix.disabled=true; 
-}
+        valide.disabled = true;
+        choix.disabled = true;
+    }
 }
 
 
-    
-function afficherQR () {
-if (lanchor.title!== '') {
 
-    caca(lanchor.title)
-    let a = "'"+lanchor.title+"'";
-        tri.textContent = "Voici votre QRCODE";    
-        fini()    
-}
-else {
-    tri.textContent = "Vous n'avez pas encore réservé"
-}
-}
- function changerCreaneau (){
-    let a;    
-    if (heu.title!== '')  {
-         a  = heu.title;
-         tri.textContent = a;
-         //heu.title;
+function afficherQR() {
+    if (lanchor.title !== '') {
+
+        caca(lanchor.title)
+        let a = "'" + lanchor.title + "'";
+        // tri.textContent = "Voici votre QRCODE";    
+        fini()
+    } else {
+        tri.textContent = "Vous n'avez pas encore réservé"
     }
-    else  {
-         a  = change.title;
-          tri.textContent = "rigno";
+}
+
+function changerCreaneau() {
+    let a;
+    if (heu.title !== '') {
+        a = heu.title;
+        tri.textContent = a;
+        //heu.title;
+    } else {
+        a = change.title;
+        // tri.textContent = "rigno";
     }
-      valide.disabled= false;
-      
-      
-      select.disabled = false;
-      remplissage ( a,'1','1','objet' );    
-      heure[+a+1].disabled = false;
-      valide.disabled= false;
-      lanchor.title = '';
-      outi.disabled = true;
-    }
+    valide.disabled = false;
+
+
+    select.disabled = false;
+    remplissage(a, '1', '1', 'objet');
+    heure[+a + 1].disabled = false;
+    valide.disabled = false;
+    lanchor.title = '';
+    outi.disabled = true;
+}
 
 
 
@@ -113,82 +112,83 @@ else {
 
 
 function setBdd() {
-  const choice = select.value;
+    const choice = select.value;
 
-  if (choice === heure[0].value) {
-    res.textContent = 'Vous ';
+    if (choice === heure[0].value) {
+        res.textContent = 'Vous ';
 
-  } 
-  for (let i =1 ; i <heure.length  ; i++) {
+    }
+    for (let i = 1; i < heure.length; i++) {
 
-     if (choice === heure[i].value) {
-    heure[i].disabled = true;
-    let $a = i-1; 
-    tri.textContent = 'Vous avez sélectionné le créneau suivant : '+$a+':00';
-    tri.textContent = lemail.title;
-    remplissage($a,'0','0','objet' );
-    remplissage (lemail.title,heure[i].id,Random(),'reservation');
-    remplissage (  lemail.title,'0','opt','user')
-    remplissage (lemail.title ,'0',heure[i].id,'user' )
-    
-    fini()
-    change.title = heure[i].id;
-    heu.title =heure[i].id;
-    
-  }
-  
-  }
-  
-      $("#choix_heure").prop("selectedIndex", 0);
+        if (choice === heure[i].value) {
+            heure[i].disabled = true;
+            let $a = i - 1;
+            tri.textContent = 'Vous avez sélectionné le créneau suivant : ' + $a + ':00';
+            // tri.textContent = lemail.title;
+            remplissage($a, '0', '0', 'objet');
+            remplissage(lemail.title, heure[i].id, Random(), 'reservation');
+            remplissage(lemail.title, '0', 'opt', 'user')
+            remplissage(lemail.title, '0', heure[i].id, 'user')
 
-  
+            fini()
+            change.title = heure[i].id;
+            heu.title = heure[i].id;
 
-  
-  }
+        }
 
-  function remplissage (lid,ladd,lrst,lbdd){
+    }
+
+    $("#choix_heure").prop("selectedIndex", 0);
+
+
+
+
+}
+
+function remplissage(lid, ladd, lrst, lbdd) {
     $(function() {
-      $.get('include4.php', { id : lid , add : ladd, rst : lrst, bdd : lbdd }, function(data) {
-        
-      });
+        $.get('include4.php', { id: lid, add: ladd, rst: lrst, bdd: lbdd }, function(data) {
+
+        });
 
     });
-  }
+}
 
- 
-  function fini() {
-      select.disabled = true;
-      valide.disabled= true;
-      
-    }
+
+function fini() {
+    select.disabled = true;
+    valide.disabled = true;
+
+}
 //RST
 
-  function setReset(){
-    
-      tri.textContent = 'uponep';
-      for (let i =0 ; i <heure.length  ; i++) {
+function setReset() {
 
-     remplissage (i,'1','objet')
-      $("#choix_heure").prop("selectedIndex", 0);
-      }
+    tri.textContent = 'uponep';
+    for (let i = 0; i < heure.length; i++) {
 
-        
-  } 
-    var app;
-  function Random(){
-    var characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let result1= ' ';
+        remplissage(i, '1', 'objet')
+        $("#choix_heure").prop("selectedIndex", 0);
+    }
+
+
+}
+var app;
+
+function Random() {
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result1 = ' ';
     var charactersLength = characters.length;
-    for ( let i = 0; i < 5; i++ ) {
+    for (let i = 0; i < 5; i++) {
         result1 += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
 
     res.textContent = result1;
-    lanchor.title =result1;
-    caca(result1)  
+    lanchor.title = result1;
+    caca(result1)
     return result1;
-     
-  }
+
+}
 /*
  * QR Code generator output demo (TypeScript)
  *
@@ -212,7 +212,7 @@ function setBdd() {
  *   Software.
  */
 "use strict";
- 
+
 function caca(a) {
     var outputElem = document.getElementById("output");
     // The main application program.
@@ -220,21 +220,21 @@ function caca(a) {
         while (outputElem.firstChild !== null)
             outputElem.removeChild(outputElem.firstChild);
         doBasicDemo();
-    }    
-    
+    }
+
     // Creates a single QR Code, then appends it to the document.
     function doBasicDemo() {
-        
+
         var text = a; // User-supplied Unicode text
         var errCorLvl = qrcodegen.QrCode.Ecc.LOW; // Error correction level
         var qr = qrcodegen.QrCode.encodeText(text, errCorLvl); // Make the QR Code symbol
         drawCanvas(qr, 10, 4, "#FFFFFF", "#000000", appendCanvas("hello-world-QR")); // Draw it on screen
     }
     // Creates a variety of QR Codes that exercise different features of the library, and appends each one to the document.
-    
-    
+
+
     function appendCanvas(caption) {
-        
+
         var result = document.createElement("canvas");
         outputElem.appendChild(result);
         return result;
@@ -257,7 +257,6 @@ function caca(a) {
             }
         }
     }
-    
+
     main();
 }
-

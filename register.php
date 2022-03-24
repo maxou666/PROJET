@@ -8,14 +8,14 @@
     <div class="container">
         <h2 class="mb-3 fw-normal">Inscription</h2>
 
-        <?php
+        <!--?php
             if(isset($_GET['erreur'])){
                 $err = $_GET['erreur'];
                 if($err==1 || $err==2){
                     echo '<div class="alert alert-danger" role="alert">Utilisateur ou mot de passe incorrect</div>';
                 }
             }
-        ?>
+        ?-->
 
         <form action="inscription.php" method="POST">
             <div class="form-floating">
