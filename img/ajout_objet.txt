@@ -1,0 +1,40 @@
+Pour ajouter un objet i :
+--CREER BDD 66
+
+	"objeti" copie de "objet1"
+	ajouter ligne "objeti" dans "reservation"
+	ajouter colonnes HEUREi et QRCODEi dans "users"
+    
+
+--CREER ET MODIFIER--
+
+	"functi.php" -- $.get('include1.php', { id : lid , add : ladd, rst : lrst, bad : lbdd }, function(data) { 
+					$.get('includei.php', { id : lid , add : ladd, rst : lrst, bad : lbdd }, function(data) {
+
+	"includei.php" -- $reponse  = $bdd->query("SELECT * FROM `objet1`"); -> $reponse  = $bdd->query("SELECT * FROM `objeti`");
+
+		  -- $upt = "UPDATE `reservation` SET $l=$b WHERE `Objet`='Objet1';"; ->$upt = "UPDATE `reservation` SET $l=$b WHERE               `  Objet`='Objeti';"; 
+     	   
+
+   		  -- $up = "UPDATE `users` SET `QRCODE1`=$b WHERE `Email`=$f;"; $up = "UPDATE `users` SET `QRCODEi`=$b WHERE `Email`=$f;";
+
+          --$upt = "UPDATE `users` SET `HEURE1`= $t WHERE `Email`=$f;";  -> $upt = "UPDATE `users` SET `HEUREi`= $t WHERE `Email`=$f;";
+
+	"pagei.php"
+
+		-- $stm = $bdd->prepare("SELECT `QRCODE1` FROM `users` WHERE `Email`= $a"); -> $stm = $bdd->prepare("SELECT `QRCODEi` FROM `users` WHERE `Email`= $a");
+
+		--$st = $bdd->prepare("SELECT `HEURE1` FROM `users` WHERE `Email`= $a"); -> $st = $bdd->prepare("SELECT `HEUREi` FROM `users` WHERE `Email`= $a");
+
+		--<script src="./funct1.js" type="text/javascript"></script> -> <script src="./functi.js" type="text/javascript"></script>
+
+--MODIFIER--
+
+	"test.php" -> <div >
+					<form action="pagei.php">
+                		<button type="submit"><img src="OBJET" height ="250" width="248"  /></button>
+           			</form>
+       			 </div>	
+
+    "testa.php" -> for ($n=1;$n<5;$n++ )  -> for ($n=1;$n<6;$n++ )
+

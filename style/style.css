@@ -1,0 +1,15 @@
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    background-color: lightblue;
+    margin-top: 40px;
+    border-radius: 10px;
+    max-width: 450px;
+}
+
+img {
+    background: transparent;
+}
